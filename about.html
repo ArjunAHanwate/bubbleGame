@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 100%;
+            height: calc(100vh - 50px);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background: url("./img2.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            
+        }
+     .box{
+            width: 50%;
+            height: 50vh;
+            background-color: #f0f0f0;
+            border: 1px solid rgb(154, 153, 153);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        
+        p{
+            font-size: 25px;
+            color: black;
+            margin-bottom: 40px;
+        }
+        .list{
+            width: 80%;
+            font-size: 25px;
+        }
+        span{
+            color: red;
+        }
+        .about{
+            padding-right: 20px;
+        }
+
+        @media (max-width : 685px){
+            .box{
+                width: 80%;
+
+            }
+        }
+
+        @media (min-width: 300),(max-width : 430px){
+            .box{
+                width: 90%;
+            }
+
+            .list{
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="gameName">
+            <div class="name">
+                <span>Bubble</span> Game
+            </div>
+        </div>
+        <div class="option">
+            <div class="home">
+                <a  href="index.html" target="" rel="noopener noreferrer">Home</a>
+            </div>
+
+            <div class="about">
+                <a href="about.html" target="" >About</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+       
+        <div class="box">
+            <p>It's a simple game of the Bubbles there are main Three sections</p>
+
+            <div class="list">
+                <ul>
+                    <li><span>Hit</span>: The Number shown in hit section it means You have to
+                        click the bubble having same number.
+                    </li>
+    
+                    <li><span>Timer</span>: Timer is limit of the one game try to click 
+                        more correct bubbles and Score.
+                    </li>
+    
+                    <li>
+                       <span>Score</span> : Score section is the section where your score will display 
+                        for one correct move you will get 10 point.
+                    </li>
+                </ul>
+            </div>
+            
+
+        </div>
+    </div>
+    
+</body>
+</html>
